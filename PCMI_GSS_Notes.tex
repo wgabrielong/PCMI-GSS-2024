@@ -1,0 +1,84 @@
+\documentclass{amsart}
+\usepackage[margin=1.1in]{geometry} 
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{accents}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{color}
+\input{shortcuts.tex}
+\setlength{\headheight}{40pt}
+
+
+\newenvironment{solution}
+  {\renewcommand\qedsymbol{$\blacksquare$}
+  \begin{proof}[Solution]}
+  {\end{proof}}
+\renewcommand\qedsymbol{$\blacksquare$}
+
+\usepackage{amsmath, amssymb, tikz, amsthm, csquotes, multicol, footnote, tablefootnote, biblatex, wrapfig, float, quiver, mathrsfs, cleveref, enumitem, upgreek}
+\addbibresource{refs.bib}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{definition}[theorem]{Definition}
+\numberwithin{equation}{section}
+\setcounter{tocdepth}{1}
+\begin{document}
+\large
+\title[Motivic Homotopy Theory -- Park City Mathematics Institute 2024]{Motivic Homotopy Theory: Notes From the PCMI Summer School \\ Park City, Utah -- July 2024}
+\author{Wern Juin Gabriel Ong}
+\address{Bowdoin College, Brunswick, Maine 04011}
+\email{gong@bowdoin.edu}
+\urladdr{https://wgabrielong.github.io/}
+\maketitle
+\section*{Preliminaries}
+\subsection*{Introductory Remarks} In summer 2024, the Park City Mathematics Institute was run on the topic of motivic homotopy theory at the Prospector Conference Center in Park City, Utah between the 7th and 27th of July. The program was organized by B. Antieau (Northwestern), M. Levine (Essen), O. R\"{o}ndigs (Osnabr\"{u}ck), A. Vishik (Nottingham), and K. Wickelgren (Duke). The courses were given on a range of topics in and around motivic homotopy theory, touching on algebro-geometric, arithmetic, and topological topics. 
+
+\subsection*{Overview} This document contains notes from the various lecture series that occurred at the summer school. The notes are \LaTeX-ed after the fact with significant alteration and are subject to misinterpretation and mistranscription. Use with caution. Any errors are undoubtedly my own and any virtues ought to be attributed to the various lecturers and not the typist. A brief summary of the topics covered are as follows. 
+
+\subsubsection*{$\mathbb{A}^{1}$-Algebraic Topology (following F. Morel)} Joseph Ayoub (Z\"{u}rich) lectured on 
+
+\subsubsection*{Arithmetic Properties of Local Systems} H\'{e}l\`{e}ne Esnault (Berlin, Harvard, \& Copenhagen) lectured on 
+
+\subsubsection*{Characteristic Classes in Stable Motivic Homotopy Theory} Frederic Deglise (CNRS \& ENS Lyon) lectured on 
+
+\subsubsection*{On $G$-Torsors} Philippe Gille (Lyon I) lectured on 
+
+\subsubsection*{Field Arithmetic and the Complexity of Galois Cohomology} Daniel Krashen (Pennsylvania) lectured on 
+
+\subsubsection*{Massey Products in Galois Cohomology} Alexander Merkujev and Federico Scavia (Los Angeles) gave a joint lecture course on 
+
+\subsubsection*{Motivic Explorations in Enumerative Geometry} Sabrina Pauli (Darmstadt) lectured on 
+
+\subsubsection*{Classifying Spaces in Motivic Homotopy Theory} Burt Totaro (Los Angeles) lectured on
+
+\subsubsection*{$\mathbb{A}^{1}$-Homotopy Theory and the Weil Conjectures} Kirsten Wickelgren (Duke) lectured on 
+
+\subsection*{Acknowledgements} I thank the selection committee for choosing me for this wonderful opportunity, the organizers for organizing the event after the initial COVID cancellation, the Park City Mathematics Institute for making my attendance possible, and the staff of the Prospector Conference Center for maintaining the environment that made all this possible. 
+\newpage
+\tableofcontents
+\include{Ayoub 1}
+\include{Deglise 1}
+\include{Esnault 1}
+\include{Gille 1}
+\include{Krashen 1}
+\include{Merkujev+Scavia 1}
+\include{Pauli 1}
+\include{Totaro 1}
+\include{Wickelgren 1}
+\newpage
+\part*{End Matter}
+\printbibliography
+\end{document}

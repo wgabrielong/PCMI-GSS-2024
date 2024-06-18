@@ -11,6 +11,7 @@
 *.cb
 *.cb2
 .*.lb
+PCMI_GSS_Notes.pdf
 
 ## Intermediate documents:
 *.dvi
